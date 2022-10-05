@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <%- include('../partials/head'); %>
+    </head>
+    <body>
+        <div>
+            <table class="table table-info table-striped ">
+                <thead>
+                    <tr>
+                        <th scope="col"> Nombre </th>
+                        <th scope="col"> Precio </th>
+                        <th scope="col"> Imagen </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% for (const produc of completeList) { %>
+                        <tr>
+                            <td><%=produc.nombre%></td>
+                            <td> $ <%=produc.precio%></td>
+                            <td>
+                                <img src= "<%=produc.url%>" width="100px" alt= "<%=produc.nombre%>">
+                            </td>
+                        </tr>
+                    <%};%>
+                </tbody>
+            </table>
+            <button class="btn  btn-primary mb-2" onclick="window.location.href='/'"> Cargar productos </button>
+        </div>
+    </body>
+    <footer>
+        <section>
+            <%- include('../partials/footer'); %>
+        </section>
+    </footer>
+</html>

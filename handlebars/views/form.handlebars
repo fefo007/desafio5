@@ -1,0 +1,24 @@
+<div>
+    <h2 class="formTitle">Ingrese nuevo producto</h2>
+    <form class="form row g-4 mg-4" action="/productos" method="POST">
+        <div class="col-sm-8">
+            <label class="form-label m-2" for="a">Nombre</label>
+            <input id="a" class="form-control m-2 " type="text" name="nombre" placeholder="ingrese el nombre">
+        </div>
+        <div class="col-sm-8">
+            <label class="form-label m-2"  for="b">Precio</label>
+            <input id="b" class="form-control m-2 " type="text" name="precio" placeholder="ingrese el precio">
+        </div>
+        <div class="col-sm-8">
+            <label class="form-label m-2"  for="c">URL</label>
+            <input id="c" class="form-control m-2 " type="text" name="url" placeholder="ingrese la url">
+        </div>
+        <div class="col-sm-8">
+            <input class="btn btn-primary m-3" value="Cargar Producto" type="submit">
+        </div>
+    </form>
+    <form lass="buttonPage" action="/productos" method="GET"> 
+        <button class="btn column btn-primary mb-2"> Ir a lista de productos</button>
+    </form>
+</div>
+
